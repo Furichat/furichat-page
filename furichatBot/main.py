@@ -29,17 +29,17 @@ class PandaScoreAPI:
             return response.json()
         return None
 
-    def get_upcoming_matches(self, game='csgo'):
+    def get_upcoming_matches(self, team_slug='furia', game='csgo'):
         #Obtém os próximos jogos do jogo especificado
-        return self._make_request(f'/{game}/matches/upcoming') 
+        return self._make_request(f'/{game}/matches/upcoming?filter[opponent_id]={team_slug}') 
 
-    def get_live_matches(self, game='csgo'):
+    def get_live_matches(self, team_slug='furia', game='csgo'):
         """Obtém os jogos ao vivo do jogo especificado"""
-        return self._make_request(f'/{game}/matches/running')
+        return self._make_request(f'/{game}/matches/running?filter[opponent_id]={team_slug}')
 
     def get_match_details(self, match_id, game='csgo'):
         """Obtém detalhes específicos de um jogo"""
-        return self._make_request(f'/{game}/matches/{match_id}')
+        return self._make_request(f'/{game}/matches/running?filter[id]={match_id}')
 
     def get_team_players(self, team_name='FURIA', game='csgo'):
         """Obtém os jogadores de um time específico"""
@@ -48,7 +48,7 @@ class PandaScoreAPI:
 @bot.message_handler(['start', 'help'])
 def start(msg):
     bot.reply_to(msg, """
-                 Olá Furioso! Aqui estão alguns comandos para você ter as informações que você quiser sobre a Fúria\n\n/help -> Instruções e comandos\n/next_game -> Quando vão ser os próximos jogos\n/score -> Para saber os placares dos jogos atuais\n/line -> quem está na line principal do time
+                 🔥Olá Furioso!🔥\n\n Aqui estão alguns comandos para você ficar por dentro de TUDO sobre a nossa querida FÚRIA! 🇧🇷🎮\n\n📋/help -> Instruções e comandos disponíveis 🤔\n\n🗓️/next_game -> Quando rolam os próximos jogos da FÚRIA! ⏰\n\n🏆/score -> Placares ao vivo dos jogos atuais! 📊\n\n👥/line -> Quem são os guerreiros na line principal do time! 💪
                  """)
     
 
@@ -66,7 +66,7 @@ def next_game(msg):
                     response += "🆚 Times ainda não definidos\n"
                 response += f"⏰ {match['scheduled_at']}\n\n"
         else:
-            response = "Desculpe, não foi possível obter informações sobre os próximos jogos no momento."
+            response = """😔 No momento não temos jogos da FÚRIA marcados no calendário.\n\n⏳ Mas não se preocupe! Logo teremos novos desafios para nossa equipe!\n\n🔄 Use o comando /next_game regularmente para ser o primeiro a saber quando os próximos jogos forem agendados.\n\n💪 Enquanto isso, continue acompanhando as redes sociais da FÚRIA para novidades e conteúdos exclusivos!\n\nPara voltar ao menu principal use o comando 📋/help"""
         
         bot.reply_to(msg, response)
 
@@ -84,7 +84,7 @@ def score(msg):
                     response += "🆚 Times ainda não definidos\n"
                 response += f"⏰ {match['status']}\n\n"
         else:
-            response = "Não há jogos ao vivo no momento."
+            response = """📺 No momento não temos nenhum jogo da FÚRIA ao vivo. 😭\n\n⏰ Fique de olho nas nossas atualizações e redes sociais para novidades e conteúdos exclusivos!\n\nPara voltar ao menu principal use o comando 📋/help"""
         
         bot.reply_to(msg, response)
 
@@ -106,12 +106,13 @@ def line(msg):
                     last_name = player.get('last_name', '')
                     full_name = f"{first_name} '{nickname}' {last_name}".strip()
                     response += f"👾 {full_name}\n"
+            response += "\nPara voltar ao menu principal use o comando 📋/help"
             
             bot.reply_to(msg, response)
         else:
-            bot.reply_to(msg, "Não foi possível encontrar os jogadores do time FURIA.")
+            bot.reply_to(msg, "Não foi possível encontrar os jogadores do time FURIA.\n\nPara voltar ao menu principal use o comando 📋/help")
     else:
-        bot.reply_to(msg, "Não foi possível obter informações sobre o time FURIA no momento.")     
+        bot.reply_to(msg, "Não foi possível obter informações sobre o time FURIA no momento.\n\nPara voltar ao menu principal use o comando 📋/help")     
 
 # Inicia o bot
 bot.infinity_polling()
