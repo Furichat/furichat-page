@@ -1,6 +1,6 @@
 # Furichat
 
-![FURIA Logo](public/logo-furia.png)
+![FURIA Logo](furichat/public/logo-furia.png)
 
 ## Sobre o Projeto
 
