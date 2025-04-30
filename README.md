@@ -1,7 +1,5 @@
 # Furichat
 
-![FURIA Logo](public/logo-furia.png)
-
 ## Sobre o Projeto
 
 Essa é uma landing page para o time de esports FURIA, feita para ser tanto uma introdução ao time quanto uma oportunidade para o fã poder acessar o chatbot no Telegram e obter informações sobre a FURIA no CS:GO.
