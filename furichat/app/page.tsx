@@ -23,9 +23,10 @@ export default function HomePage() {
         />
       </a>
 
-      {/* Começo do conteúdo da página*/}
+      {/* Começo do conteúdo da página */}
       <div className='grid grid-flow-row gap-20 md:gap-32 px-9 md:px-28 py-20 md:py-32 mt-24 md:mt-32 mx-auto w-full max-w-screen-xl'>
 
+        {/* Sessão Quem Somos*/}
         <div className='grid grid-flow-row gap-8 md:gap-12 place-items-center text-center'>
           <h1 id='quem somos'>Nós somos furiosos</h1>
           <p className=''><span>Somos FURIA</span>. Uma organização de esports que nasceu do desejo de representar o Brasil no CS e conquistou muito mais que isso: expandimos nossas ligas, disputamos os principais títulos, adotamos novos objetivos e ganhamos um propósito maior. Somos muito mais que o sucesso competitivo.<br/><span>Somos um movimento sociocultural</span>.<br/>Nossa história é de <span>pioneirismo, grandes conquistas e tradição</span>. Nosso presente é de <span>desejo, garra e estratégia.</span> A pantera estampada nopeito estampa também nosso <span>futuro de glória</span>. Nossos pilares de performance, lifestyle, conteúdo, business, tecnologia e social são os principais constituintes do movimento FURIA, que representa uma unidade que respeita as individualidades e impacta positivamente os contextos em que se insere. <span>Unimos pessoas e alimentamos sonhos dentro e fora dos jogos</span></p>
@@ -40,6 +41,7 @@ export default function HomePage() {
               className='w-full'
             />
           </div>
+          {/* Grid de imagens de jogos que a Furia participa */}
           <div className='grid grid-cols-2 md:grid-flow-col gap-8 md:gap-14 items-center place-items-center'>
             <Image
             src="/cs2.png"
@@ -82,6 +84,7 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Sessão de Notícias */}
         <div className='grid grid-flow-row gap-6 md:gap-9 items-center place-items-center'>
           <h1 id='noticias'>Todas Notícias sobre a Furia</h1>
           <p>Conheça o themove.gg, o portal de notícias sobre esports pela Furia. Feito para você acompanhar tudo que acontece na cena</p>
@@ -107,6 +110,7 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Sessão da loja da Furia */}
         <div className='grid grid-flow-row gap-6 md:gap-9 items-center place-items-center'>
           <h1 id='apparel'>Vista a Furia</h1>
           <p>A Fúria é a nossa loja online de roupas com estilo único e moderno. Oferecemos uma seleção completa de peças de qualidade - desde camisetas e moletons confortáveis até jaquetas e acessórios que complementam seu visual.</p>
@@ -122,6 +126,7 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Sessão do chatbot */}
         <div className='grid grid-flow-row gap-8 md:gap-14 items-center place-items-center'>
           <h1 id='chat'>Conheça o Furichat</h1>
           <div>
@@ -137,6 +142,7 @@ export default function HomePage() {
           <Button texto='Acesse o chat' link='https://t.me/Furichat_bot'></Button>
         </div>
 
+        {/* Sessão Patrocinadores */}
         <div className='grid grid-flow-row gap-8 md:gap-14 items-center place-items-center'>
           <h1 id='patrocinadores'>Nossos patrocinadores</h1>
           <div className='grid grid-cols-2 md:grid-flow-col gap-10 md:gap-20 items-center place-items-center'>
@@ -188,6 +194,7 @@ export default function HomePage() {
         </div>
       </div>
 
+      {/* Footer da página */}
       <footer>
         <Image
         src='/furia-pantera.png'
