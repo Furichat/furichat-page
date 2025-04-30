@@ -1,6 +1,7 @@
 # Furichat
 
-![FURIA Logo](furichat/public/logo-furia.png)
+
+<img src="furichat/public/logo-furia.png" width='522' height='185'>
 
 ## Sobre o Projeto
 
