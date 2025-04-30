@@ -1,27 +1,11 @@
 import Image from 'next/image'
 import Button from './componets/button'
+import Navbar from './componets/navbar'
 
 export default function HomePage() {
   return (
     <div className="flex flex-col w-full font-[family-name:var(--font-inter)]">
-      <nav>
-      <Image
-      src="/logo-furia.png"
-      width={1487}
-      height={528}
-      alt="Logo de letras escrito FURIA"
-      priority
-      quality={100}
-      className='w-28 h-9 '
-    />
-        <div className="hidden md:grid grid-flow-col gap-8 items-center font-bold">
-          <a href='#quem somos' className='uppercase'>Quem somos</a>
-          <a href='#noticias' className='uppercase'>Notícias</a>
-          <a href='#apparel' className='uppercase'>Furia Apparel</a>
-          <a href='#chat' className='uppercase'>Chat de jogos</a>
-          <a href='#patrocinadores' className='uppercase'>Patrocinadores</a>
-        </div>
-      </nav>
+      <Navbar></Navbar>
 
       {/* Ícone do telegram fixo para acessar o furibot */}
       <a 
