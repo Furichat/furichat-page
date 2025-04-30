@@ -10,11 +10,11 @@
   }
 
   h1{
-    @apply uppercase text-5xl font-bold italic;
+    @apply uppercase text-3xl sm:text-5xl font-bold italic;
   }
 
   p{
-    @apply text-justify
+    @apply px-4 md:px-0 text-justify
   }
   
   span{
@@ -22,14 +22,16 @@
   }
   
   ul{
-    @apply list-disc
+    @apply list-disc pl-6 md:pl-0
   }
 
   nav{
-    @apply fixed top-0 left-0 right-0 py-14 px-28 grid grid-flow-col gap-20 bg-white z-50
+    @apply fixed top-0 left-0 right-0 py-4 px-4 md:py-14 md:px-28 grid;
+    @apply grid-flow-col gap-4 md:gap-20 bg-white z-50;
+    @apply justify-items-center md:justify-items-start;
   }
 
   footer{  
-    @apply w-screen p-28 h-80 bg-black grid grid-flow-col gap-36 text-white place-items-center
+    @apply w-screen h-auto p-6 sm:p-28 bg-black grid grid-flow-row md:grid-flow-col gap-12 sm:gap-36 text-white place-items-center
   }
 }
