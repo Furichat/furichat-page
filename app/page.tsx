@@ -29,7 +29,7 @@ export default function HomePage() {
         {/* Sessão Quem Somos*/}
         <div className='grid grid-flow-row gap-8 md:gap-12 place-items-center text-center'>
           <h1 id='quem somos'>Nós somos furiosos</h1>
-          <p className=''><span>Somos FURIA</span>. Uma organização de esports que nasceu do desejo de representar o Brasil no CS e conquistou muito mais que isso: expandimos nossas ligas, disputamos os principais títulos, adotamos novos objetivos e ganhamos um propósito maior. Somos muito mais que o sucesso competitivo.<br/><span>Somos um movimento sociocultural</span>.<br/>Nossa história é de <span>pioneirismo, grandes conquistas e tradição</span>. Nosso presente é de <span>desejo, garra e estratégia.</span> A pantera estampada nopeito estampa também nosso <span>futuro de glória</span>. Nossos pilares de performance, lifestyle, conteúdo, business, tecnologia e social são os principais constituintes do movimento FURIA, que representa uma unidade que respeita as individualidades e impacta positivamente os contextos em que se insere. <span>Unimos pessoas e alimentamos sonhos dentro e fora dos jogos</span></p>
+          <p className=''><span>Somos FURIA</span>. Uma organização de esports que nasceu do desejo de representar o Brasil no CS e conquistou muito mais que isso: expandimos nossas ligas, disputamos os principais títulos, adotamos novos objetivos e ganhamos um propósito maior. Somos muito mais que o sucesso competitivo.<br/><span>Somos um movimento sociocultural</span>.<br/>Nossa história é de <span>pioneirismo, grandes conquistas e tradição</span>. Nosso presente é de <span>desejo, garra e estratégia.</span> A pantera estampada no peito estampa também nosso <span>futuro de glória</span>. Nossos pilares de performance, lifestyle, conteúdo, business, tecnologia e social são os principais constituintes do movimento FURIA, que representa uma unidade que respeita as individualidades e impacta positivamente os contextos em que se insere. <span>Unimos pessoas e alimentamos sonhos dentro e fora dos jogos</span></p>
           <div className="w-full flex justify-center overflow-hidden">
             <Image 
               src="/banner.png"
@@ -86,8 +86,8 @@ export default function HomePage() {
 
         {/* Sessão de Notícias */}
         <div className='grid grid-flow-row gap-6 md:gap-9 items-center place-items-center'>
-          <h1 id='noticias'>Todas Notícias sobre a Furia</h1>
-          <p>Conheça o themove.gg, o portal de notícias sobre esports pela Furia. Feito para você acompanhar tudo que acontece na cena</p>
+          <h1 id='noticias'>Todas as Notícias sobre a Furia</h1>
+          <p>Conheça o themove.gg, o portal de notícias sobre esports pela Furia. Feito para você acompanhar tudo que acontece na cena.</p>
 
           <div className='items-center grid grid-flow-row md:grid-flow-col gap-8 md:gap-36 justify-center'>
             <Image
@@ -130,7 +130,7 @@ export default function HomePage() {
         <div className='grid grid-flow-row gap-8 md:gap-14 items-center place-items-center'>
           <h1 id='chat'>Conheça o Furichat</h1>
           <div>
-            <p>Furichat é o chatbot para fãs que querem saber de tudo que ta rolando com o Time da FÚRIA no CS:GO.
+            <p>Furichat é o chatbot para fãs que querem saber de tudo que está rolando com o Time da FÚRIA no CS:GO.
               <br/><br/><span>Podendo saber:</span><br/><br/>
             </p>
             <ul>
