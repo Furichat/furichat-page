@@ -1,5 +1,6 @@
 # Furichat
 link do site https://furichat-page.vercel.app/
+# Link do repositório do chatbot https://github.com/Furichat/furichat-bot
 
 ## Sobre o Projeto
 
